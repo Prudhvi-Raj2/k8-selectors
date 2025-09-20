@@ -15,3 +15,7 @@ spec:
     operator: "Equal"
     value: "gpu"
     effect: "NoSchedule"
+  - key: "hardware"
+    operator: "Equal"
+    value: "something"
+    effect: "NoExecute"
