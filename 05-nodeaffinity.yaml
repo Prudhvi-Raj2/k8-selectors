@@ -14,14 +14,6 @@ spec:
             operator: In
             values:
             - gpu
-      preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
-        preference:
-          matchExpressions:
-          - key: hardware
-            operator: In
-            values:
-            - gpu
   containers:
   - name: nginx
     image: nginx
