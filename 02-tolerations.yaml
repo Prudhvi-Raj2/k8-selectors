@@ -17,5 +17,5 @@ spec:
     effect: "NoSchedule"
   - key: "hardware"
     operator: "Equal"
-    value: "something"
+    value: "memory"
     effect: "NoExecute"
