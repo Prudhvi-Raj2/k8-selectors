@@ -5,6 +5,15 @@ metadata:
   labels:
     purpose: "Pod-1"
 spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: hardware
+            operator: In
+            values:
+            - gpu
   containers:
   - name: with-pod-affinity
     image: registry.k8s.io/pause:3.8
